@@ -112,7 +112,7 @@ export default function Progress() {
           {series.length > 1 && (
             <span className={'badge ' + (delta >= 0 ? 'badge-accent' : 'badge-muted')}>
               {delta >= 0 ? '+' : ''}
-              {delta} kg
+              {delta} lb
             </span>
           )}
         </div>
@@ -128,9 +128,9 @@ export default function Progress() {
         <div className="card" key={i} style={{ padding: '12px 16px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>{s.label}</span>
-            <span className="mono" style={{ fontWeight: 600 }}>{s.value} kg</span>
+            <span className="mono" style={{ fontWeight: 600 }}>{s.value} lb</span>
           </div>
-          <div style={{ fontSize: 11.5, color: 'var(--text-faint)', marginTop: 2 }}>1RM estimado: ~{s.e1rm} kg</div>
+          <div style={{ fontSize: 11.5, color: 'var(--text-faint)', marginTop: 2 }}>1RM estimado: ~{s.e1rm} lb</div>
         </div>
       ))}
     </div>

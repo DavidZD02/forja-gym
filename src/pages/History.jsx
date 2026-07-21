@@ -51,7 +51,7 @@ export default function History() {
               <div>
                 <div className="card-title">{formatDate(w.date)}</div>
                 <div style={{ color: 'var(--text-muted)', fontSize: 12.5, marginTop: 2 }}>
-                  {(w.exercises || []).length} ejercicios · {Math.round(totalVolume).toLocaleString('es')} kg volumen
+                  {(w.exercises || []).length} ejercicios · {Math.round(totalVolume).toLocaleString('es')} lb volumen
                 </div>
               </div>
               {prsThisSession.length > 0 && (
@@ -76,7 +76,7 @@ export default function History() {
                       <div className="mono" style={{ fontSize: 12.5, color: 'var(--text-muted)', marginTop: 3 }}>
                         {ex.sets.map((s, si) => (
                           <span key={si}>
-                            {s.weight}kg×{s.reps}
+                            {s.weight}lb×{s.reps}
                             {s.rir != null ? ` (RIR ${s.rir})` : ''}
                             {si < ex.sets.length - 1 ? '  ·  ' : ''}
                           </span>
