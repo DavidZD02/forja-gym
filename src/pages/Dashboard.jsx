@@ -102,7 +102,7 @@ export default function Dashboard() {
         </div>
         <div className="stat-box">
           <div className="stat-value mono">{Math.round(totalVolume).toLocaleString('es')}</div>
-          <div className="stat-label">Volumen kg</div>
+          <div className="stat-label">Volumen lb</div>
         </div>
       </div>
 
