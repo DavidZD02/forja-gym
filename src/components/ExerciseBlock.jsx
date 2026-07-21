@@ -37,7 +37,7 @@ export default function ExerciseBlock({ exercise, onChange, onRemove }) {
 
       <div className="set-row-labels">
         <span>#</span>
-        <span>Peso kg</span>
+        <span>Peso lb</span>
         <span>Reps</span>
         <span>RIR</span>
         <span></span>
